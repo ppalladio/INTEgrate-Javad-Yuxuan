@@ -54,9 +54,10 @@ text-decoration: none;
 }
 
 
+:root {
+  --integrate-color1:#5DBDB9;
+  --integrate-color2:#0170BB;
+  --noneBlack-text-color:#5A6E7E;
+  --important-messages-color:#F4460F;
 
-
-
-
-/**/
 

@@ -15,8 +15,11 @@ Main color
 
 //project page
 
-/eference page 
+/reference page 
 https://startup.gov.tn/en
 
 /Page content
 https://docs.google.com/document/d/1GgBCUYpKes_FjabAJmSzGod7p-cTi2Nu/edit
+
+/ INTEgrate-Javad-Yuxuan
+ https://github.com/JavadJan/INTEgrate-Javad-Yuxuan.git for cloning 

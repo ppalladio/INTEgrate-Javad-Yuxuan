@@ -1,18 +1,27 @@
 
-*{
+*,
+*::after,
+*::before{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
+
+html {
+  font-size: 62.5%;
+}
+
 body{
-    padding:30px;
+    padding:3rem;
     font-family: 'Lato',sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
     color: #777;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
+
 .header{
   position:relative;
   
@@ -63,12 +72,12 @@ body{
 
 .logo-box{
   position:absolute;
-  top:70px;
-  left:70px;
+  top:7rem;
+  left:7rem;
 }
 
 .logo{
-  height: 70px;
+  height: 7rem;
 }
 .text-box{
   position:absolute;
@@ -85,18 +94,19 @@ body{
 
 .heading-primary-main{
   display: block;
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: 400;
-  letter-spacing: 25px;
+  letter-spacing: 2.5rem;
   text-transform: uppercase;
   animation: leftIn 1s ease-out;
+  margin-bottom: .5rem;;
 }
 
 .heading-primary-sub{
   display: block;
-  font-size: 31px;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 26px;
+  letter-spacing: 2.6rem;
   animation: rightIn 1s ease-out;
 }
 
@@ -105,23 +115,23 @@ body{
 .btn:link,
 .btn:visited{
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.8rem;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 25px 80px;
-  border-radius: 80px;
+  padding: 2.5rem 8rem;
+  border-radius: 8rem;
   transition: all .2s;
   position:relative;
   animation: moveUp 0.5s ease-out;
 }
 
 .btn:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn:active{
-  transform: translateY(-1px);
-  box-shadow: 0 05x 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-.1rem);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white{
@@ -134,7 +144,7 @@ body{
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 80px;
+  border-radius: 8rem;
   position: absolute;
   top:0;
   left:0;

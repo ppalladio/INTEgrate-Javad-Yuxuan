@@ -5,26 +5,31 @@
   box-sizing: border-box;
 }
 body{
-    padding:20px;
+    padding:30px;
     font-family: 'Lato',sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #777;
-    -webkit-font-smoothin: antialiased;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-.header {
+.header{
+  position:relative;
+  
+}
+.photo-container {
   display: flex;
   flex-direction: row;
-
+  background: linear-gradient(to right,  rgb(93, 189, 185),   rgb(1, 112, 187));
+  clip-path: polygon(0 0 ,100% 0, 100% 75vh, 0 100%);
+  
 }
 
-/* collegue */
+/* college */
 .immigration {
   background-image: url('../image/header/immi.jpg');
   background-position: center;
-  background: linear-gradient (to right,  rgb(93, 189, 185,0.8),   rgb(1, 112, 187,0.8))
+ 
 }
 
 .lgbtq1 {
@@ -51,9 +56,105 @@ body{
   height: 94vh;
   width: 20%;
   background-size: cover;
-
-  
+  opacity:0.2;
 }
+
+.text-box{
+  position:fixed;
+  left:50%;
+  top:40%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+}
+.logo-box{
+  position:absolute;
+  top:70px;
+  left:70px;
+}
+
+.logo{
+  height: 70px;
+}
+
+.heading-primary{
+  color:#fff;
+  text-transform: capitalize;
+  margin-bottom: 6rem;
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 25px;
+  text-transform: uppercase;
+  animation: leftIn 1s ease-out;
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: 26px;
+  animation: rightIn 1s ease-out;
+}
+
+
+/* ================================================================= header btn  */
+.btn:link,
+.btn:visited{
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 80px;
+  border-radius: 80px;
+  transition: all .2s;
+  position:relative;
+  animation: moveUp 0.5s ease-out;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 05x 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white{
+  background-color: #fff;
+  color:#777;
+}
+
+.btn::after {
+  content:'';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 80px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after{
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+
+/* ================================================================= */
+
+
+
 #left-side{
     display: flex;
     flex-direction: column;
@@ -259,3 +360,48 @@ text-decoration: none;
       left: 0%;
     }
   }
+
+
+
+/*  animation  */
+@keyframes leftIn {
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes rightIn {
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveUp {
+  0%{
+    opacity: 0;
+    transform: translateY(150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* end of animation */

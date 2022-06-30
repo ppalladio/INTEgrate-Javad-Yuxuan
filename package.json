@@ -1,0 +1,22 @@
+{
+  "name": "integrate-javad-yuxuan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppalladio/INTEgrate-Javad-Yuxuan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppalladio/INTEgrate-Javad-Yuxuan/issues"
+  },
+  "homepage": "https://github.com/ppalladio/INTEgrate-Javad-Yuxuan#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

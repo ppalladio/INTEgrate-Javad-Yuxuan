@@ -28,3 +28,57 @@ body {
       animation: rightIn 1s ease-out;
     }
   }
+
+.heading-secondary{
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color-two, $color-one);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color:transparent;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+
+  &:hover{transform: skewY(5deg) skewX(2deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba( $color-black, 0.15);
+  }
+}
+.heading-quaternary{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform:capitalize;
+}
+.important-text{
+  text-transform: uppercase;
+  background-image:linear-gradient(to right, lighten($color-important,30%), $color-important);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.9s; 
+  /**
+  * ! why not working 
+  */
+  &:hover{
+    transform: skewY(100deg) skewX(20deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba( $color-black, 0.3);
+  }
+}
+.category-container__cards{
+  display: flex;
+  max-width: 40%;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2rem 10rem 2em 0em;
+  padding: 2.5rem 2.5rem;
+  border-radius: 5rem;
+  transition: all 0.2s;
+  position: relative;
+  animation: moveUp 0.5s ease-out;
+  color: #fff;
+  background-image: linear-gradient(to bottom, $color-two, $color-one);
+  &:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+}

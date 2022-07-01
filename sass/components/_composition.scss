@@ -1,0 +1,55 @@
+.composition{
+    position: relative;
+    &__target{
+        color: $color-grey-light-1;
+        font-size: 2rem;
+        background-image: linear-gradient(to left top, $pacific-blue, $color-three);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        border-radius: 10px;
+        display: flex;
+        margin:2rem 0;
+        padding:1rem 1rem;
+        position: absolute;
+        max-width: 40%;
+        cursor: default;
+        transition: all 0.2s;
+        outline-offset: 2rem;
+
+        &--1 {
+            left:5rem;
+            top:2rem;
+        }
+        
+        &--2 {
+            left:40rem;
+            top:-2rem;
+        }
+
+        &--3 {
+            left:48rem;
+            top:5rem;
+            z-index: 4;
+        }
+
+        &--4 {
+            left:10%;
+            top:15rem;
+            z-index: 1;
+        }
+
+        &--5 {
+            left:20rem;
+            top:10rem;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow:0 2.5rem 4rem rgba($color-black, 0.5);
+            z-index:5;
+            outline: 0.5rem solid $blue-ncs;
+        }
+        // &:hover &__target:not(:hover){
+        //     transform: scale(0.5);
+        // }
+    }
+}

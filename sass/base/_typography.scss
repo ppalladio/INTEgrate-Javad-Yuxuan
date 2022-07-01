@@ -58,6 +58,7 @@ body {
   /**
   * ! why not working 
   */
+  
   &:hover{
     transform: skewY(100deg) skewX(20deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba( $color-black, 0.3);
@@ -65,20 +66,35 @@ body {
 }
 .category-container__cards{
   display: flex;
-  max-width: 40%;
-  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 10vw;
+  border:#777 10px solid;
+  flex-direction: row;
   font-size: 1.6rem;
   font-weight: 400;
   margin: 2rem 10rem 2em 0em;
   padding: 2.5rem 2.5rem;
   border-radius: 5rem;
-  transition: all 0.2s;
-  position: relative;
-  animation: moveUp 0.5s ease-out;
+  transition: all 0.6s;
+  // position: relative;
   color: #fff;
   background-image: linear-gradient(to bottom, $color-two, $color-one);
+  cursor:default;
   &:hover{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
+}
 
+.heading-tertiary{
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem;
+}
+
+.paragraph{
+  font-size: 1.6rem;
+  line-height:1.5;
+  color:$color-non-black;
 }

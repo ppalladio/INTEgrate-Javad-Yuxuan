@@ -3,3 +3,20 @@
     padding: 30rem 0;
     margin-top: -20vh;
 }
+
+.section-objectives{
+    padding: 20rem 0;
+    background-image: linear-gradient(to left, rgba($color-four, 0.8) ,rgba($color-three,0.8)), url(../image/secondary.jpg);
+    background-size: cover;
+    background-position: 100% 70%;
+    transform: skewY(-15deg);
+//direct child elements
+    & > * {
+        transform: skewY(15deg);
+    }
+    margin-top: -40rem;
+    .paragraph{
+        padding: 0 8rem;
+        color: $color-white;
+    }
+}

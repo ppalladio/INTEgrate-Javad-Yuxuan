@@ -300,6 +300,12 @@ body {
     padding: 0 8rem;
     color: #fff; }
 
+.section-sustainability {
+  background-color: #f7f7f7;
+  padding: 60rem 0 50rem 0;
+  text-align: center;
+  margin-top: -30rem; }
+
 .row {
   max-width: 180rem;
   margin: 0 auto; }

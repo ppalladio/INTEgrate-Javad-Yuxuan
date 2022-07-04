@@ -1,0 +1,22 @@
+.sustainability__text{
+    width: 75%;
+    margin: 10rem auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.15);
+    background-image: linear-gradient(to bottom, lighten($maximum-blue-green,20%), lighten($blue-ncs,10%),);
+    border-radius: 3px;
+    transform: skewX(-12deg);
+    padding:6rem;
+    padding-left: 9rem;
+    transition: all 0.2s;
+    cursor: default;
+    
+
+    .paragraph{
+        transform: skewX(12deg);
+       
+    }
+    &:hover{
+        transform:translateY(0.5rem) scale(1.02) skewX(-12deg);
+    }
+
+}

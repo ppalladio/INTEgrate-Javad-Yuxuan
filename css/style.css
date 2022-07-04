@@ -76,7 +76,8 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  margin-bottom: 4rem; }
   .heading-secondary:hover {
     transform: skewY(5deg) skewX(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.15); }
@@ -112,7 +113,7 @@ body {
   border-radius: 5rem;
   transition: all 0.6s;
   color: #fff;
-  background-image: linear-gradient(to bottom, #0170bb, #5dbdb9);
+  background: linear-gradient(to bottom, #0170bb, #5dbdb9);
   cursor: default; }
   .category-container__cards:hover {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -127,7 +128,8 @@ body {
 .paragraph {
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #5a6e7e; }
+  color: #5a6e7e;
+  line-break: auto; }
 
 .u-center-text {
   text-align: center !important; }
@@ -266,7 +268,7 @@ body {
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 5;
-      outline: 0.5rem solid #208aba; }
+      outline: 0.5rem solid rgba(32, 138, 186, 0.5); }
 
 .objective-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -282,6 +284,22 @@ body {
   .objective-box:hover {
     transform: translateY(-1.5rem) scale(1.05); }
 
+.sustainability__text {
+  width: 75%;
+  margin: 10rem auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to bottom, #a5dbd8, rgba(49, 167, 220, 0.5));
+  border-radius: 3px;
+  transform: skewX(-12deg);
+  padding: 6rem;
+  padding-left: 9rem;
+  transition: all 0.2s;
+  cursor: default; }
+  .sustainability__text .paragraph {
+    transform: skewX(12deg); }
+  .sustainability__text:hover {
+    transform: translateY(0.5rem) scale(1.02) skewX(-12deg); }
+
 .section-description {
   background-color: #f7f7f7;
   padding: 30rem 0;
@@ -292,19 +310,19 @@ body {
   background-image: linear-gradient(to left, rgba(92, 127, 188, 0.8), rgba(92, 188, 121, 0.8)), url(../image/secondary.jpg);
   background-size: cover;
   background-position: 100% 70%;
-  transform: skewY(-15deg);
+  transform: skewY(-10deg);
   margin-top: -40rem; }
   .section-objectives > * {
-    transform: skewY(15deg); }
+    transform: skewY(10deg); }
   .section-objectives .paragraph {
     padding: 0 8rem;
     color: #fff; }
 
 .section-sustainability {
   background-color: #f7f7f7;
-  padding: 60rem 0 50rem 0;
+  padding: 25rem 0;
   text-align: center;
-  margin-top: -30rem; }
+  margin-top: -10rem; }
 
 .row {
   max-width: 180rem;

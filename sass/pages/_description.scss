@@ -5,14 +5,14 @@
 }
 
 .section-objectives{
-    padding: 20rem 0;
+    padding: 20rem 0; 
     background-image: linear-gradient(to left, rgba($color-four, 0.8) ,rgba($color-three,0.8)), url(../image/secondary.jpg);
     background-size: cover;
     background-position: 100% 70%;
-    transform: skewY(-15deg);
+    transform: skewY(-10deg);
 //direct child elements
     & > * {
-        transform: skewY(15deg);
+        transform: skewY(10deg);
     }
     margin-top: -40rem;
     .paragraph{
@@ -23,7 +23,7 @@
 
 .section-sustainability{
     background-color: $color-grey-light-1;
-    padding:60rem 0 50rem 0;
+    padding:25rem 0;
     text-align: center;
-    margin-top: -30rem;
+    margin-top: -10rem;
 }

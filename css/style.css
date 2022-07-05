@@ -54,7 +54,7 @@ body {
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     letter-spacing: 2.5rem;
     text-transform: uppercase;
@@ -68,7 +68,7 @@ body {
     animation: rightIn 1s ease-out; }
 
 .heading-secondary {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   background-image: linear-gradient(to right, #0170bb, #5dbdb9);
@@ -152,10 +152,10 @@ body {
 /* ================================================================= header btn  */
 .btn:link, .btn:visited {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 2.5rem 8rem;
+  padding: 2rem 4rem;
   border-radius: 8rem;
   transition: all 0.2s;
   position: relative;
@@ -220,10 +220,10 @@ body {
       background-position: center; }
   .header__logo-box {
     position: absolute;
-    top: 7rem;
-    left: 7rem; }
+    top: 5rem;
+    left: 5rem; }
   .header__logo {
-    height: 7rem; }
+    height: 5rem; }
   .header__text-box {
     position: absolute;
     left: 50%;
@@ -248,18 +248,18 @@ body {
     transition: all 0.2s;
     outline-offset: 2rem; }
     .composition__target--1 {
-      left: 5rem;
-      top: 2rem; }
+      left: 8rem;
+      top: 1rem; }
     .composition__target--2 {
-      left: 40rem;
+      left: 30rem;
       top: -2rem; }
     .composition__target--3 {
-      left: 48rem;
-      top: 5rem;
+      left: 39rem;
+      top: 15rem;
       z-index: 4; }
     .composition__target--4 {
-      left: 10%;
-      top: 15rem;
+      left: 1rem;
+      top: -2rem;
       z-index: 1; }
     .composition__target--5 {
       left: 20rem;
@@ -271,10 +271,10 @@ body {
       outline: 0.5rem solid rgba(32, 138, 186, 0.5); }
 
 .objective-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.5rem;
-  padding: 5rem 2rem;
-  margin: 5rem 2rem;
+  padding: 2rem 1rem;
+  margin: 2rem 1rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -283,6 +283,14 @@ body {
     padding: 0.5rem 0 1.5rem 0; }
   .objective-box:hover {
     transform: translateY(-1.5rem) scale(1.05); }
+  .objective-box--1 {
+    margin: 0 -4rem 0 3rem; }
+  .objective-box--2 {
+    margin: 0 1rem 0 -2rem; }
+  .objective-box--3 {
+    margin: 0 2rem 0 -7rem; }
+  .objective-box--4 {
+    margin: 0 4rem 0 -8rem; }
 
 .sustainability__text {
   width: 75%;
@@ -300,18 +308,76 @@ body {
   .sustainability__text:hover {
     transform: translateY(0.5rem) scale(1.02) skewX(-12deg); }
 
+.bg_area {
+  position: fixed;
+  left: -50%;
+  right: -50%;
+  top: 0;
+  bottom: 0;
+  animation: animate 5s ease-in-out infinite alternate;
+  background: linear-gradient(90deg, #0170bb, #5dbdb9);
+  opacity: .8;
+  z-index: 2; }
+
+.timeline {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 60rem;
+  width: 60%;
+  position: relative; }
+  .timeline__side {
+    height: 60rem;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .timeline__side--title {
+      text-transform: uppercase;
+      padding: 50% 0; }
+    .timeline__side--front {
+      background-color: #fff; }
+      .timeline__side--front-1 {
+        margin: 0rem 5rem 0rem 20rem; }
+      .timeline__side--front-2 {
+        margin: 0rem 20rem 0rem 5rem; }
+    .timeline__side--back {
+      transform: rotateY(180deg); }
+      .timeline__side--back-1 {
+        background-image: linear-gradient(to bottom right, #5CBC79, #4eb0b9);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        margin: 0rem 5rem 0rem 20rem; }
+        .timeline__side--back-1 .paragraph {
+          color: #fff;
+          text-align: center;
+          padding: 12rem 3rem; }
+      .timeline__side--back-2 {
+        background-image: linear-gradient(to bottom right, #57bbfe, rgba(32, 138, 186, 0.5));
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        margin: -0rem 20rem -0rem 5rem; }
+        .timeline__side--back-2 .paragraph {
+          color: #fff;
+          text-align: center;
+          font-size: 1.6rem;
+          padding: 3rem 3rem; }
+  .timeline:hover .timeline__side--front {
+    transform: rotateY(180deg); }
+  .timeline:hover .timeline__side--back {
+    transform: rotateY(0deg); }
+
 .section-description {
   background-color: #f7f7f7;
-  padding: 30rem 0;
+  padding: 20rem 10rem;
   margin-top: -20vh; }
 
 .section-objectives {
-  padding: 20rem 0;
-  background-image: linear-gradient(to left, rgba(92, 127, 188, 0.8), rgba(92, 188, 121, 0.8)), url(../image/secondary.jpg);
+  padding: 15rem 0rem;
+  background-image: linear-gradient(to left, rgba(92, 127, 188, 0.5), rgba(92, 188, 121, 0.5)), url(../image/secondary.jpg);
   background-size: cover;
-  background-position: 100% 70%;
+  background-position: 100% 60%;
   transform: skewY(-10deg);
-  margin-top: -40rem; }
+  margin-top: -30rem; }
   .section-objectives > * {
     transform: skewY(10deg); }
   .section-objectives .paragraph {
@@ -323,6 +389,12 @@ body {
   padding: 25rem 0 5rem 0;
   text-align: center;
   margin-top: -10rem; }
+
+.section-project-timeline {
+  padding: 15rem 0;
+  text-align: center;
+  padding: 25rem 0;
+  background-color: #682d67; }
 
 .row {
   max-width: 180rem;

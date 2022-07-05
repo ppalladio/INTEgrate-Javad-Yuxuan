@@ -13,7 +13,7 @@ body {
     margin-bottom: 6rem;
     &--main {
       display: block;
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: 400;
       letter-spacing: 2.5rem;
       text-transform: uppercase;
@@ -31,7 +31,7 @@ body {
   }
 
 .heading-secondary{
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   background-image: linear-gradient(to right, $color-two, $color-one);
@@ -46,11 +46,14 @@ body {
     text-shadow: .5rem 1rem 2rem rgba( $color-black, 0.15);
   }
 }
+
 .heading-quaternary{
   font-size: 2rem;
   font-weight: 700;
   text-transform:capitalize;
 }
+
+
 .important-text{
   text-transform: uppercase;
   background-image:linear-gradient(to right, lighten($color-important,30%), $color-important);

@@ -1,0 +1,66 @@
+.timeline{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 60rem;
+    width: 60%;
+    // margin: 0 10rem;
+    position: relative;
+    &__side{
+    height: 60rem;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    
+        &--title{
+            text-transform: uppercase;
+            padding:50% 0;
+        }
+    &--front{
+        background-color: $color-white;
+        
+        &-1{
+            margin: 0rem 5rem 0rem 20rem;
+        }
+        &-2{
+            margin: 0rem 20rem 0rem 5rem;
+        }
+    }
+    &--back{
+    
+        transform: rotateY(180deg);
+        &-1{
+            background-image: linear-gradient(to bottom right, $color-three,$verdigris);
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+            margin: 0rem 5rem 0rem 20rem;
+            .paragraph{
+                color:$color-white;
+                text-align: center;
+                padding: 12rem 3rem;
+            }
+    }
+    &-2{
+        background-image: linear-gradient(to bottom right, lighten($spanish-blue,30%),$blue-ncs);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+        margin: -0rem 20rem -0rem 5rem;
+        .paragraph{
+            color:$color-white;
+            text-align: center;
+            font-size: 1.6rem;
+            padding: 3rem 3rem;
+        }
+    }
+   
+    }
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0deg);
+    }
+}

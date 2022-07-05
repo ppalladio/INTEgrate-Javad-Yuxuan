@@ -1,0 +1,11 @@
+.bg_area{
+    position: fixed;
+    left: -50%;
+    right: -50%;
+    top: 0;
+    bottom: 0;
+    animation: animate 5s ease-in-out infinite alternate;
+    background: linear-gradient(90deg, $spanish-blue , $maximum-blue-green );
+    opacity: .8;
+    z-index: 2;
+}

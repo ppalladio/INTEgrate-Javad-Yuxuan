@@ -29,9 +29,8 @@
 }
 
 .section-project-timeline{
-    padding:15rem 0;
+    padding:15rem 0 10rem 0;
     text-align: center;
-    padding: 25rem 0;
-    background-color: #682d67;
+    animation: bg-change 5s ease infinite alternate;
     
 }

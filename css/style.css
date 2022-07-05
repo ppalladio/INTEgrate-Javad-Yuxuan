@@ -26,6 +26,14 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes bg-change {
+  0% {
+    background-color: #4C01BC; }
+  50% {
+    background-color: #0170bb; }
+  100% {
+    background-color: #BC4C01; } }
+
 *,
 *::after,
 *::before {
@@ -391,10 +399,9 @@ body {
   margin-top: -10rem; }
 
 .section-project-timeline {
-  padding: 15rem 0;
+  padding: 15rem 0 10rem 0;
   text-align: center;
-  padding: 25rem 0;
-  background-color: #682d67; }
+  animation: bg-change 5s ease infinite alternate; }
 
 .row {
   max-width: 180rem;

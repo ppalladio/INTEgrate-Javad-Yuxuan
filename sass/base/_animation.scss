@@ -39,3 +39,28 @@
     }
   }
   
+  @keyframes bg-change {
+    0%{
+      background-color:$color-tetradic-one;
+    }
+    // 20%{
+    //   background-color:$star-command-blue;
+    // }
+    // 30%{
+    //   background-color:$blue-ncs;
+
+    // }
+    50% {
+      background-color:$color-two;
+    }
+
+    // 50%{
+    //   background-color:$pacific-blue;
+    // }
+    // 70%{
+    //   background-color:$verdigris;
+    // }
+    100%{
+      background-color:#BC4C01;
+    }
+  }

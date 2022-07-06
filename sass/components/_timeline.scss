@@ -18,8 +18,11 @@
             text-transform: uppercase;
             padding:50% 0;
         }
+     
     &--front{
-        background-color: $color-white;
+        background-color: $color-one;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        
         
         &-1{
             margin: 0rem 5rem 0rem 20rem;
@@ -74,5 +77,6 @@
         padding-left: 9rem;
         transition: all 0.2s;
         cursor: default;
+        color: $color-white;
     }
 }

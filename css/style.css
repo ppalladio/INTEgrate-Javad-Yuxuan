@@ -334,7 +334,8 @@ body {
       text-transform: uppercase;
       padding: 50% 0; }
     .timeline__side--front {
-      background-color: #fff; }
+      background-color: #5dbdb9;
+      clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); }
       .timeline__side--front-1 {
         margin: 0rem 5rem 0rem 20rem; }
       .timeline__side--front-2 {
@@ -371,7 +372,8 @@ body {
     padding: 3rem;
     padding-left: 9rem;
     transition: all 0.2s;
-    cursor: default; }
+    cursor: default;
+    color: #fff; }
 
 .section-description {
   background-color: #f7f7f7;

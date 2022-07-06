@@ -316,17 +316,6 @@ body {
   .sustainability__text:hover {
     transform: translateY(0.5rem) scale(1.02) skewX(-12deg); }
 
-.bg_area {
-  position: fixed;
-  left: -50%;
-  right: -50%;
-  top: 0;
-  bottom: 0;
-  animation: animate 5s ease-in-out infinite alternate;
-  background: linear-gradient(90deg, #0170bb, #5dbdb9);
-  opacity: .8;
-  z-index: 2; }
-
 .timeline {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -363,16 +352,26 @@ body {
       .timeline__side--back-2 {
         background-image: linear-gradient(to bottom right, #57bbfe, rgba(32, 138, 186, 0.5));
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-        margin: -0rem 20rem -0rem 5rem; }
+        margin: -0rem 20rem 0rem 5rem; }
         .timeline__side--back-2 .paragraph {
           color: #fff;
           text-align: center;
           font-size: 1.6rem;
-          padding: 3rem 3rem; }
+          padding: 12rem 3rem 0rem 3rem; }
   .timeline:hover .timeline__side--front {
     transform: rotateY(180deg); }
   .timeline:hover .timeline__side--back {
     transform: rotateY(0deg); }
+  .timeline__text {
+    width: 60%;
+    margin: -5rem auto 5rem auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to bottom, #a5dbd8, rgba(49, 167, 220, 0.5));
+    border-radius: 3px;
+    padding: 3rem;
+    padding-left: 9rem;
+    transition: all 0.2s;
+    cursor: default; }
 
 .section-description {
   background-color: #f7f7f7;
@@ -401,7 +400,8 @@ body {
 .section-project-timeline {
   padding: 15rem 0 10rem 0;
   text-align: center;
-  animation: bg-change 5s ease infinite alternate; }
+  animation: bg-change 3s ease infinite alternate;
+  border-radius: 2px; }
 
 .row {
   max-width: 180rem;

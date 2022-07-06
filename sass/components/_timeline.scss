@@ -44,12 +44,12 @@
     &-2{
         background-image: linear-gradient(to bottom right, lighten($spanish-blue,30%),$blue-ncs);
         box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-        margin: -0rem 20rem -0rem 5rem;
+        margin: -0rem 20rem 0rem 5rem;
         .paragraph{
             color:$color-white;
             text-align: center;
             font-size: 1.6rem;
-            padding: 3rem 3rem;
+            padding: 12rem 3rem 0rem 3rem;
         }
     }
    
@@ -62,5 +62,17 @@
 
     &:hover &__side--back{
         transform: rotateY(0deg);
+    }
+    &__text{
+        width: 60%;
+        margin: -5rem auto 5rem auto;
+        box-shadow: 0 3rem 6rem rgba($color-black, 0.15);
+        background-image: linear-gradient(to bottom, lighten($maximum-blue-green,20%), lighten($blue-ncs,10%),);
+        border-radius: 3px;
+        // transform: skewX(5deg);
+        padding:3rem;
+        padding-left: 9rem;
+        transition: all 0.2s;
+        cursor: default;
     }
 }

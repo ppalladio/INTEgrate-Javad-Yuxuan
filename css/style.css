@@ -34,6 +34,12 @@
   100% {
     background-color: #BC4C01; } }
 
+@keyframes animate {
+  0% {
+    transform: translateX(-50%); }
+  100% {
+    transform: translateX(50%); } }
+
 *,
 *::after,
 *::before {
@@ -101,22 +107,18 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.9s;
-  /**
-  * ! why not working 
-  */ }
+  display: inline-block; }
   .important-text:hover {
-    transform: skewY(100deg) skewX(20deg) scale(1.1);
+    transform: skewY(2deg) skewX(2deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
 
 .category-container__cards {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 10vw;
-  border: #777 10px solid;
+  float: left;
+  max-width: 40%;
   flex-direction: row;
   font-size: 1.6rem;
   font-weight: 400;
-  margin: 2rem 10rem 2em 0em;
+  margin: 2rem 4rem 0em 0em;
   padding: 2.5rem 2.5rem;
   border-radius: 5rem;
   transition: all 0.6s;
@@ -334,8 +336,7 @@ body {
       text-transform: uppercase;
       padding: 50% 0; }
     .timeline__side--front {
-      background-color: #5dbdb9;
-      clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); }
+      background-color: #5dbdb9; }
       .timeline__side--front-1 {
         margin: 0rem 5rem 0rem 20rem; }
       .timeline__side--front-2 {
@@ -375,10 +376,35 @@ body {
     cursor: default;
     color: #fff; }
 
+.bg {
+  background-color: red; }
+
+::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.bg-area {
+  height: 100%;
+  position: fixed;
+  left: -50%;
+  right: -50%;
+  top: 0;
+  bottom: 0;
+  animation: animate 5s ease-in-out infinite alternate;
+  background: linear-gradient(90deg, #5dbdb9 50%, #0170bb 50%);
+  z-index: -1; }
+  .bg-area__layer-2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 3s; }
+  .bg-area__layer-3 {
+    animation-duration: 3s; }
+
 .section-description {
   background-color: #f7f7f7;
-  padding: 20rem 10rem;
-  margin-top: -20vh; }
+  padding: 20rem 10rem 35rem 10rem;
+  margin-top: -20vh;
+  margin-bottom: 30rem; }
 
 .section-objectives {
   padding: 15rem 0rem;
@@ -386,7 +412,7 @@ body {
   background-size: cover;
   background-position: 100% 60%;
   transform: skewY(-10deg);
-  margin-top: -30rem; }
+  margin-top: -40rem; }
   .section-objectives > * {
     transform: skewY(10deg); }
   .section-objectives .paragraph {
@@ -402,7 +428,6 @@ body {
 .section-project-timeline {
   padding: 15rem 0 10rem 0;
   text-align: center;
-  animation: bg-change 3s ease infinite alternate;
   border-radius: 2px; }
 
 .row {

@@ -64,3 +64,12 @@
       background-color:#BC4C01;
     }
   }
+
+  @keyframes animate {
+    0% {
+      transform: translateX(-50%);
+    }
+    100%{
+      transform: translateX(50%)
+    }
+  }

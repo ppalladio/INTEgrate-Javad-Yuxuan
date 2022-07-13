@@ -4,4 +4,18 @@
         display: table;
         clear:both;
     }
+};
+
+// 0-600px phone
+// 600-900px tablet portrait
+// 900 - 1200px tablet landscape
+// 1200px - 1440px :current
+// 1440 - big screen
+
+
+@mixin media($breakpoints){
+   @if $breakpoints == phone {
+    @media (max-width: 600px) {@content}
+   }
+
 }

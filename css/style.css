@@ -38,7 +38,7 @@
   0% {
     transform: translateX(-50%); }
   100% {
-    transform: translateX(50%); } }
+    transform: translateX(80%); } }
 
 *,
 *::after,
@@ -375,30 +375,6 @@ body {
     transition: all 0.2s;
     cursor: default;
     color: #fff; }
-
-.bg {
-  background-color: red; }
-
-::after {
-  content: '';
-  display: table;
-  clear: both; }
-
-.bg-area {
-  height: 100%;
-  position: fixed;
-  left: -50%;
-  right: -50%;
-  top: 0;
-  bottom: 0;
-  animation: animate 5s ease-in-out infinite alternate;
-  background: linear-gradient(90deg, #5dbdb9 50%, #0170bb 50%);
-  z-index: -1; }
-  .bg-area__layer-2 {
-    animation-direction: alternate-reverse;
-    animation-duration: 3s; }
-  .bg-area__layer-3 {
-    animation-duration: 3s; }
 
 .section-description {
   background-color: #f7f7f7;

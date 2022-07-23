@@ -13,6 +13,8 @@
       transform: translate(0);
     }
   }
+
+
   @keyframes rightIn {
     0%{
       opacity: 0;
@@ -27,6 +29,7 @@
       transform: translate(0);
     }
   }
+
   @keyframes moveUp {
     0%{
       opacity: 0;
@@ -39,37 +42,14 @@
     }
   }
   
-  @keyframes bg-change {
-    0%{
-      background-color:$color-tetradic-one;
-    }
-    // 20%{
-    //   background-color:$star-command-blue;
-    // }
-    // 30%{
-    //   background-color:$blue-ncs;
+@keyframes color_changing {
+  0% {opacity: 0.5;
+    color:  $spanish-blue;}
+  50%{opacity: .7;
+    color:$color-tetradic-two;
+  };
+  100%{opacity: 1;
+  color: $maximum-blue-green;}
+}
 
-    // }
-    50% {
-      background-color:$color-two;
-    }
 
-    // 50%{
-    //   background-color:$pacific-blue;
-    // }
-    // 70%{
-    //   background-color:$verdigris;
-    // }
-    100%{
-      background-color:#BC4C01;
-    }
-  }
-
-  @keyframes animate {
-    0% {
-      transform: translateX(-50%);
-    }
-    100%{
-      transform: translateX(80%)
-    }
-  }

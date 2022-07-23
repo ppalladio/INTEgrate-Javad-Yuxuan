@@ -13,11 +13,13 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    transition: all 0.5s;
     
         &--title{
             text-transform:capitalize;
             padding:60% 0;
             font-size: x-large;
+            
         }
      
     &--front{
@@ -77,5 +79,8 @@
         transition: all 0.2s;
         cursor: default;
         color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+        &:hover{transform:  scale(1.02);
+            }
     }
 }
